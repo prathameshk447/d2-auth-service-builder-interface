@@ -1,5 +1,11 @@
 package org.dyanyog.dto;
 
+import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@Component
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class User extends UserData {
 	
 	private String status;
